@@ -57,7 +57,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
     >
       <div className="text-center space-y-8">
         {/* Logo/Name */}
-        <div ref={textRef} className="space-y-2">
+        <div ref={textRef} className="space-y-2 flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-light tracking-wider gradient-text">
             Yashaswi Priya
           </h1>
@@ -67,7 +67,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         </div>
 
         {/* Progress Bar */}
-        <div className="w-80 h-1 bg-surface rounded-full overflow-hidden">
+        <div className="w-100 h-1 bg-surface rounded-full overflow-hidden">
           <div
             ref={progressRef}
             className="h-full loading-bar"
